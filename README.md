@@ -1,6 +1,7 @@
 # MEMPowerBI
 This is a PowerBI report template for Microsoft Endpoint Manager EPP. It merge data from Configuration Manager and from Microsoft Endpoint Manager allowing you to have a unique report for Cloud Managed devices, Co-Managed devices and CM only managed devices.
 
+![image](https://user-images.githubusercontent.com/48328018/124558003-6fcb5c80-de3a-11eb-977f-73063888a096.png)
 
 ## How to use it
 You can open that PowerBI template directly in PowerBI desktop.
@@ -27,3 +28,5 @@ You should add the following permissions to your application in the Microsoft Gr
 ## Get data from MEM CM
 To connect you MEM CM, you just need to enter the name of the server hosting the Configuration Manager SQL Database and the Database name (usually CM_[name of your primary site])
 
+## Publish it to the PowerBI Service
+You can use that report in the PowerBI Service and have a scheduled refresh. To do so, you'll need to deploy the PowerBI Gateway to allow the service to access your onPrem SQL

@@ -32,8 +32,8 @@ Grant the correct permission
 ![image](https://user-images.githubusercontent.com/48328018/124561320-0baa9780-de3e-11eb-855e-8a5c44924692.png)
 Click "Add a permission", select "Microsoft Graph"
 ![image](https://user-images.githubusercontent.com/48328018/124561389-20872b00-de3e-11eb-851e-e932bbaa9fcb.png)
-Then "Application permissions" and add "Device.ReadAll" and "DeviceManagementConfiguration.Read.All"
-![image](https://user-images.githubusercontent.com/48328018/124561553-52988d00-de3e-11eb-9d6d-a1bc7bc7aff5.png)
+Then "Application permissions" and add "Device.ReadAll", "DeviceManagementConfiguration.Read.All" and "DeviceManagementManagedDevices.Read.All"
+![image](https://user-images.githubusercontent.com/48328018/124564866-c6886480-de41-11eb-977c-835757e1a970.png)
 Click "Add permissions" 
 
 Remove the "User.Read" permission that is not required and then click on "Grant permission for XXXXX"

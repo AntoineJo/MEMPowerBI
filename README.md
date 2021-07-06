@@ -17,13 +17,29 @@ Depending on the data source you want to use, you can enter either or both:
 ## Get data from MEM
 To gather data from MEM we are using the Microsoft Graph API as the antimalware data is not yet available from the MEM DW.
 Thus you need to create an Application in Azure Active Directory and give it access to the Microsoft Graph on the MEM part. Proceed as described here to do so: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
-Your application will be a Web Application, no need for a return URL
 
-Then create an Application Client Secret.
+From here: https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps
+click "New registration"
+![image](https://user-images.githubusercontent.com/48328018/124559936-883c7680-de3c-11eb-82fe-4dc0b75d380f.png)
+Enter you application Name
+![image](https://user-images.githubusercontent.com/48328018/124560064-b0c47080-de3c-11eb-9015-8881f2a32a8c.png)
 
-### Define permission for you app in the Microsoft Graph
-You should add the following permissions to your application in the Microsoft Graph
-![image](https://user-images.githubusercontent.com/48328018/124557137-72798200-de39-11eb-9d49-4949afb5c906.png)
+Add a client secret to your application
+![image](https://user-images.githubusercontent.com/48328018/124560367-039e2800-de3d-11eb-8a90-418735379610.png)
+Don't forget to copy your secret somewhere or to paste it directly in the PowerBI Parameter prompt as it won't be displayed again once you leave that screen
+
+Grant the correct permission
+![image](https://user-images.githubusercontent.com/48328018/124561320-0baa9780-de3e-11eb-855e-8a5c44924692.png)
+Click "Add a permission", select "Microsoft Graph"
+![image](https://user-images.githubusercontent.com/48328018/124561389-20872b00-de3e-11eb-851e-e932bbaa9fcb.png)
+Then "Application permissions" and add "Device.ReadAll" and "DeviceManagementConfiguration.Read.All"
+![image](https://user-images.githubusercontent.com/48328018/124561553-52988d00-de3e-11eb-9d6d-a1bc7bc7aff5.png)
+Click "Add permissions" 
+
+Remove the "User.Read" permission that is not required and then click on "Grant permission for XXXXX"
+![image](https://user-images.githubusercontent.com/48328018/124561785-8ffd1a80-de3e-11eb-8104-1815947001cd.png)
+
+
 
 ## Get data from MEM CM
 To connect you MEM CM, you just need to enter the name of the server hosting the Configuration Manager SQL Database and the Database name (usually CM_[name of your primary site])

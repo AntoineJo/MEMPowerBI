@@ -23,3 +23,7 @@ Then create an Application Client Secret.
 ### Define permission for you app in the Microsoft Graph
 You should add the following permissions to your application in the Microsoft Graph
 ![image](https://user-images.githubusercontent.com/48328018/124557137-72798200-de39-11eb-9d49-4949afb5c906.png)
+
+## Get data from MEM CM
+To connect you MEM CM, you just need to enter the name of the server hosting the Configuration Manager SQL Database and the Database name (usually CM_[name of your primary site])
+
